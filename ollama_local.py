@@ -58,9 +58,9 @@ llm_model = "llama3" # This is the default llm model that we will be using.
 
 # Uncomment one of the following lines below to choose a 'persona'
 #
-#persona =  "princess"
+persona =  "princess"
 #persona =  "orc"
-persona = " " # This is the default persona that we will be using.
+#persona = " " # This is the default persona that we will be using.
 
 hidden_pre_prompts = " "
 query_input = " "
@@ -116,10 +116,10 @@ def ask(query):
     response = response['message']['content']
     return response
 
-os.system('clear')
+#os.system('clear')
 while True:
     query = input(query_input)
-    os.system('clear')
+    #os.system('clear')
     answer = ask(query)
     #print(f'Question: {query}')
     print("")
